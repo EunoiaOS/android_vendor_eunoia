@@ -1,4 +1,3 @@
-
 # Required packages
 PRODUCT_PACKAGES += \
     Aperture \
@@ -23,6 +22,10 @@ PRODUCT_PACKAGE_OVERLAYS += \
 # Include eunoia LatinIME dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/eunoia/overlay/dictionaries
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/eunoia/overlay/dictionaries
+
+# Charger
+PRODUCT_PACKAGES += \
+    product_charger_res_images
 
 # Extra tools
 PRODUCT_PACKAGES += \
