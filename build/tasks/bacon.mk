@@ -30,7 +30,7 @@ bacon: $(INTERNAL_OTA_PACKAGE_TARGET)
 	$(hide) $(SHA256) $(EUNOIA_TARGET_PACKAGE) | sed "s|$(PRODUCT_OUT)/||" > $(EUNOIA_TARGET_PACKAGE).sha256sum
 	echo -e ${CL_BLD}${CL_GRN}"===============================-Package complete-==============================="${CL_GRN}
 	echo -e ${CL_BLD}${CL_RED}"Zip: "${CL_GRN} $(EUNOIA_TARGET_PACKAGE)${CL_RST}
-	echo -e ${CL_BLD}${CL_RED}"MD5: "${CL_GRN}" `cat $(EUNOIA_TARGET_PACKAGE).md5sum | awk '{print $$1}' `"${CL_RST}
+	echo -e ${CL_BLD}${CL_RED}"SHA256: "${CL_GRN}" `cat $(EUNOIA_TARGET_PACKAGE).sha256sum | awk '{print $$1}' `"${CL_RST}
 	echo -e ${CL_BLD}${CL_RED}"Size:"${CL_GRN}" `du -sh $(EUNOIA_TARGET_PACKAGE) | awk '{print $$1}' `"${CL_RST}
 	echo -e ${CL_BLD}${CL_RED}"TimeStamp:"${CL_GRN}" `cat $(PRODUCT_OUT)/system/build.prop | grep ro.build.date.utc | cut -d'=' -f2 | awk '{print $$1}' `"${CL_RST}
 	echo -e ${CL_BLD}${CL_RED}"Integer Value:"${CL_GRN}" `wc -c $(EUNOIA_TARGET_PACKAGE) | awk '{print $$1}' `"${CL_RST}
