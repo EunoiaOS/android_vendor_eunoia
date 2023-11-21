@@ -26,7 +26,9 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/eunoia/overlay/dictionaries
 # Charger
 ifeq ($(USE_PIXEL_CHARGER),true)
 PRODUCT_PACKAGES += \
-    product_charger_res_images
+    charger_res_images \
+    product_charger_res_images \
+    product_charger_res_images_vendor
 endif
 
 # Extra tools
