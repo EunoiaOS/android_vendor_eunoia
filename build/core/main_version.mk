@@ -4,22 +4,21 @@ ADDITIONAL_SYSTEM_PROPERTIES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
 endif
 
-# LineageOS System Version
+# EunoiaOS System Version
 ADDITIONAL_SYSTEM_PROPERTIES += \
-    ro.lineage.version=$(LINEAGE_VERSION) \
-    ro.lineage.releasetype=$(LINEAGE_BUILDTYPE) \
-    ro.lineage.build.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \
-    ro.modversion=$(LINEAGE_VERSION) \
-    ro.lineagelegal.url=https://lineageos.org/legal
+    ro.eunoia.version=$(EUNOIA_VERSION) \
+    ro.eunoia.releasetype=$(EUNOIA_BUILDTYPE) \
+    ro.eunoia.build.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \
+    ro.modversion=$(EUNOIA_VERSION) \
 
-# LineageOS Platform Display Version
+# EunoiaOS Platform Display Version
 ADDITIONAL_SYSTEM_PROPERTIES += \
-    ro.lineage.display.version=$(LINEAGE_DISPLAY_VERSION)
+    ro.eunoia.display.version=$(EUNOIA_DISPLAY_VERSION)
 
-# LineageOS Platform SDK Version
+# EunoiaOS Platform SDK Version
 ADDITIONAL_SYSTEM_PROPERTIES += \
-    ro.lineage.build.version.plat.sdk=$(LINEAGE_PLATFORM_SDK_VERSION)
+    ro.eunoia.build.version.plat.sdk=$(EUNOIA_PLATFORM_SDK_VERSION)
 
-# LineageOS Platform Internal Version
+# EunoiaOS Platform Internal Version
 ADDITIONAL_SYSTEM_PROPERTIES += \
-    ro.lineage.build.version.plat.rev=$(LINEAGE_PLATFORM_REV)
+    ro.eunoia.build.version.plat.rev=$(EUNOIA_PLATFORM_REV)
