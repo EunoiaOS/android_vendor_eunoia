@@ -9,7 +9,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 PRODUCT_COPY_FILES += \
     vendor/eunoia/config/permissions/privapp-permissions-eunoia-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-eunoia-product.xml \
     vendor/linevall/config/permissions/org.lineageos.health.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/org.lineageos.health.xml \
-    vendor/linevall/config/permissions/org.lineageos.livedisplay.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/org.lineageos.livedisplay.xml
+    vendor/linevall/config/permissions/org.lineageos.livedisplay.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/org.lineageos.livedisplay.xml \
+    vendor/linevall/prebuilt/common/etc/permissions/privapp-permissions-livedisplay.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-livedisplay.xml
 
 # Enable one-handed mode
 PRODUCT_PRODUCT_PROPERTIES += \
